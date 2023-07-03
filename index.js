@@ -73,3 +73,35 @@ const bagPrice = 30000;
 const limit = 20000;
 const canIBuyBag = bagPrice < limit;
 console.log(canIBuyBag);
+
+//---ЛОГИЧЕСКИЕ ОПЕРАТОРЫ---
+
+// И &&
+const isHomeworkDone = true;
+const isRoomClean = true;
+const canIGoToParty = isHomeworkDone && isRoomClean;
+console.log(canIGoToParty); //ответ будет - да, так как оба условия выполнены.
+
+// ИЛИ || (нестрогое выполнение условий)
+const isRoomClean2 = false;
+const canIGoToParty2 = isHomeworkDone || isRoomClean2;
+
+console.log(canIGoToParty); //ответ будет - да, так как одно из условий выполнено(true)
+
+// НЕ !
+const isRoomDirty = true;
+const canIGoToParty3 = isHomeworkDone || !isRoomDirty;
+
+console.log(canIGoToParty3); //true
+
+// КОМБИНИРОВАНИЕ ОПЕРАТОРОВ
+const doesFatherAllow = true;
+const canIGoToParty4 = isHomeworkDone || !isRoomDirty || doesFatherAllow;
+
+console.log(canIGoToParty4);
+
+//---УСЛОВИЯ (ВЕТВЛЕНИЕ)---
+
+// Если if
+
+// Если-не if-else
