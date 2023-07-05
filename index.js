@@ -103,5 +103,61 @@ console.log(canIGoToParty4);
 //---УСЛОВИЯ (ВЕТВЛЕНИЕ)---
 
 // Если if
+const age = 29;
 
-// Если-не if-else
+if (age > 18) {
+  //true (условие должно выполняться)
+  console.log("Тебе больше 18");
+  console.log("Круто!!!");
+} else {
+  console.log("не переживай"); // на тот случай, если условие не будет выполнено (например 17 > 18 - false)
+}
+console.log("эта строчка выполняется всегда, даже без условий");
+
+//пример с логическими операторами
+if (age === 18) {
+  console.log("Супер!");
+  console.log("Круто!!!");
+} else {
+  console.log("не переживай");
+}
+
+// пример с множеством условий
+
+const herAge = 18;
+
+if ((isHomeworkDone || !isRoomDirty || doesFatherAllow) && herAge > 18) {
+  console.log("Ты можешь идти погулять");
+} else {
+  console.log("Ты не можешь идти погулять");
+}
+
+// if-else-if
+// пример с ютуба (https://www.youtube.com/watch?v=OIIBECEaYKI)
+
+const button = document.querySelector("button");
+const input = document.querySelector(".yourAge");
+
+button.onclick = () => {
+  let num = +input.value;
+  if (num >= 16 && num < 69) {
+    console.log("Welcome!");
+  } else if (num >= 70) {
+    console.log("my congrats granpa!!!");
+  } else {
+    console.log("Access denied");
+  }
+  //switchcase
+  switch (num) {
+    case 15:
+      console.log("try again in a year");
+      break;
+    case 16:
+      console.log("nice to see you!");
+      break;
+    default:
+      console.log("let's go");
+  }
+};
+
+s;
