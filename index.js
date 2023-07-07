@@ -160,4 +160,42 @@ button.onclick = () => {
   }
 };
 
-s;
+//----ФУНКЦИИ----
+
+// Создание функции (объявление функции)
+function sayHi() {
+  console.log("hello");
+}
+
+sayHi(); // - вызов функции
+
+// Передача параметров
+function sum(a, b) {
+  const result = a + b; // - можно не писать
+  console.log(result);
+  return a + b; // - return sum
+}
+
+sum(1, 4); // вот здесь и есть передача параметров для а и б
+
+// Возвращение значений
+const name2 = "Tom";
+const surname = "& Jerry";
+const fullName2 = buildFullName(name2, surname);
+
+function buildFullName(name2, surname) {
+  return `${name2} ${surname}`; // return string
+}
+
+console.log(fullName2);
+
+// Example 3
+
+const myAge = 30;
+const canIDrinkWhiskey = isAdult(myAge);
+
+console.log(canIDrinkWhiskey); // answer - true
+
+function isAdult(age) {
+  return age > 18; // return boolean
+}
