@@ -100,4 +100,6 @@ console.log(getMonthByNumber(12));
 // Функция принимает число в рублях и валюту для перевода строкой ('USD, 'EUR', 'KZT', 'AED').
 // Функция возвращает результат конвертации. Для решения задачи можно применить конструкцию switch-case.
 
-function convertRub(valueRub, currency) {}
+function convertRub(valueRub, currency) {
+    
+}
