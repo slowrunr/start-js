@@ -101,5 +101,15 @@ console.log(getMonthByNumber(12));
 // Функция возвращает результат конвертации. Для решения задачи можно применить конструкцию switch-case.
 
 function convertRub(valueRub, currency) {
-    
+  const Rates = {
+    USD: 0.011,
+    EUR: 0.01,
+    KZT: 4.89,
+    AED: 0.041,
+  };
+
+  if (!RATES[currency]) {
+    return "error";
+  }
+  return valueRub * RATES[currency];
 }
